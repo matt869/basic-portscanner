@@ -90,7 +90,7 @@ stacking_clf = StackingClassifier(
 stacking_clf.fit(X_train, y_train)
 y_pred_stack = stacking_clf.predict(X_test)
 
-print("\n🤖 Stacking Ensemble Results:")
+print("\n Stacking Ensemble Results:")
 print(classification_report(y_test, y_pred_stack))
 
 # -----------------------
@@ -107,3 +107,4 @@ print(classification_report(y_test, y_pred_stack))
 # automl = autosklearn.classification.AutoSklearnClassifier(time_left_for_this_task=60, per_run_time_limit=30)
 # automl.fit(X_train, y_train)
 # print("AutoSklearn Models:", automl.show_models())
+
